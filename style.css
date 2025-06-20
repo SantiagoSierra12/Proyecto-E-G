@@ -1,0 +1,53 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+.banner-slider{
+    position: relative;
+    width: 100vw;
+    height: 350px;
+    overflow: hidden;
+}
+
+.banner-track{
+    display: flex;
+    width: 300vw; /* 3 imágenes */
+    transition: transform 0.5s ease;
+}
+
+.banner-track img{
+    width: 100vw;
+    height: 350px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Flechas */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    cursor: pointer;
+    padding: 0 15px;
+    z-index: 10;
+    user-select: none;
+    border-radius: 5px;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
