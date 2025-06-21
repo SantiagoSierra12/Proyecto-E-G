@@ -28,3 +28,7 @@ $carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://
 
 $carousel-transition-duration:       .6s;
 $carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+
+$carousel-dark-indicator-active-bg:  $black; // Deprecated in v5.3.4
+$carousel-dark-caption-color:        $black; // Deprecated in v5.3.4
+$carousel-dark-control-icon-filter:  invert(1) grayscale(100); // Deprecated in v5.3.4

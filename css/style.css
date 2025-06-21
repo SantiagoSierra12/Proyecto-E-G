@@ -2,3 +2,8 @@
 html {
     scroll-behavior: smooth;
 }
+
+.carousel {
+  max-height: 400px; /* o el tamaño que quieras */
+  overflow: hidden;  /* para que no se salga el contenido */
+}
