@@ -13,3 +13,7 @@ html {
   height: 250px; /* o el alto que prefieras */
   object-fit: contain;
 }
+
+.icon-verde {
+  color: var(--bs-success);
+}
