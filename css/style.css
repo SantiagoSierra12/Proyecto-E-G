@@ -4,14 +4,15 @@ html {
 }
 
 .carousel {
-  max-height: 400px; /* o el tamaño que quieras */
+  max-height: 550px; /* o el tamaño que quieras */
   overflow: hidden;  /* para que no se salga el contenido */
 }
 
 .card-img-top {
   width: 100%;
-  height: 250px; /* o el alto que prefieras */
+  height: 350px; /* o el alto que prefieras */
   object-fit: contain;
+  border: none;
 }
 
 .icon-verde {
