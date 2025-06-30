@@ -18,3 +18,21 @@ html {
 .icon-verde {
   color: var(--bs-success);
 }
+
+
+.dropdown-menu {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 10px;
+
+  .dropdown-item {
+    font-weight: 500;
+    color: #333;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: #e2e6ea;
+      color: #000;
+    }
+  }
+}
