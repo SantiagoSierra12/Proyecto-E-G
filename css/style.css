@@ -36,3 +36,22 @@ html {
     }
   }
 }
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Máx 4 columnas */
+  gap: 20px; /* Espacio entre productos */
+  padding: 20px;
+}
+
+.producto {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+}
+
+.producto img {
+  max-width: 100%;
+  border-radius: 8px;
+}
