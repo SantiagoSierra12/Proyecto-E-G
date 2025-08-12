@@ -49,8 +49,8 @@
 
       <!-- Carrito -->
       <div class="position-relative">
-        <i class="fas fa-shopping-cart fa-lg icon-verde"></i>
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">2</span>
+        <i class="fas fa-shopping-cart fa-lg icon-verde" id="icono-carrito" style="cursor:pointer;"></i>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark" id="cantidad-carrito">0</span>
       </div>
     </div>
       <!-- Login -->
@@ -332,5 +332,24 @@
     </main>
     <script src="slider.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-...SKETCHED..." crossorigin="anonymous"></script> -->
+    <div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="modalCarritoLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCarritoLabel">Tu carrito</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="lista-carrito" class="list-group mb-3"></ul>
+        <p>Total: $<span id="total">0</span></p>
+      </div>
+      <div class="modal-footer">
+        <button id="finalizar-compra" type="button" class="btn btn-success">Finalizar compra</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="carrito.js" defer></script>
 </body>
 </html>
